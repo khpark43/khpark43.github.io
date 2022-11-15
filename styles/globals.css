@@ -1,0 +1,62 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* https://github.com/crozynski/comicneue */
+@font-face {
+  font-family: "Comic Neue Light";
+  src: local("Comic Neue Light"), local("ComicNeue-Light"),
+    url("/fonts/ComicNeue-Light.woff2") format("woff2"),
+    url("/fonts/ComicNeue-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comic Neue Regular";
+  src: local("Comic Neue Regular"), local("ComicNeue-Regular"),
+    url("/fonts/ComicNeue-Regular.woff2") format("woff2"),
+    url("/fonts/ComicNeue-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comic Neue Bold";
+  src: local("Comic Neue Bold"), local("ComicNeue-Bold"),
+    url("/fonts/ComicNeue-Bold.woff2") format("woff2"),
+    url("/fonts/ComicNeue-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Comic Neue Light";
+}
+
+body {
+  /* line-height:2; */
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+summary {
+  cursor: pointer;
+}
